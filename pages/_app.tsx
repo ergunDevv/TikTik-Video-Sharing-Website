@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { useState,useEffect } from 'react'
+import { GoogleOAuthProvider } from '@react-oauth/google';
 
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
@@ -14,6 +15,7 @@ import Sidebar from '../components/Sidebar'
   if(isSSR) return null;
 
   return (
+    <GoogleOAuthProvider clientId={`${process.env.NEXT_PUBLIC_GOOGLE_API_TOKEN}`}>
   <div>
     <Navbar/>
     <div className='flex gap-3 md:gap-20'>
@@ -25,6 +27,8 @@ import Sidebar from '../components/Sidebar'
       </div>
     </div>
   </div>
+    </GoogleOAuthProvider>
+
   )
 }
 
