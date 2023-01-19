@@ -32,7 +32,6 @@ const VideoCard: NextPage<IProps> = ({post}) => {
       setPlaying(true);
     }
   }
-  console.log(post.caption)
 
   return (
     <div className='flex flex-col border-b-2 border-gray-200 pb-6'>
