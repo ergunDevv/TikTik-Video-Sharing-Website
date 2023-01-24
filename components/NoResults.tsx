@@ -14,6 +14,7 @@ const NoResults = ({text}: IProps) => {
           ?<BiCommentX/>
           :<MdOutlineVideocamOff/>
           }
+          
 
         </p>
         <p className='text-2xl text-center'>{text}</p>
