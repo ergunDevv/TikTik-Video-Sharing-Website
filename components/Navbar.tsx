@@ -15,8 +15,8 @@ import useAuthStore from '../store/authStore'
 
 const Navbar = () => {
   const [searchValue,setSearchValue] = useState('');  
-  const {userProfile, addUser,removeUser} = useAuthStore();
-
+  const { addUser,removeUser} = useAuthStore();
+  const {userProfile} = useAuthStore();
   const router = useRouter();
 
   const handleSearch = (e: { preventDefault: () => void }) => {
@@ -70,11 +70,11 @@ const Navbar = () => {
                         <span className='hidden md:block'> Upload </span>
                     </button>
                 </Link>
-                {userProfile.image &&(
+                {userProfile['image']  &&(
                       <Link href="/">
                       <>
                         <Image
-                        src={userProfile.image}
+                        src={userProfile['image']}
                         alt="profile photo"
                         width={40}
                         height={40}
