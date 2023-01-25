@@ -18,8 +18,8 @@
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-icons": "^4.3.1",
-    "typescript.tsdk": "./node_modules/typescript/lib",
     "uuidv4": "^6.2.13",
+    "yarn": "^1.22.19",
     "zustand": "^4.0.0-rc.1"
   },
   "devDependencies": {
@@ -32,5 +32,9 @@
     "postcss": "^8.4.14",
     "tailwindcss": "^3.0.24",
     "typescript": "4.6.4"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/ergunDevv/TikTik-Video-Sharing-Website.git",
+  "author": "ergunDevv <ergncyln2127088@gmail.com>",
+  "license": "MIT"
 }
